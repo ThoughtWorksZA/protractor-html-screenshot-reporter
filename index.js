@@ -149,7 +149,7 @@ function reportSpecResults(spec) {
 		return;
 	}
 
-	browser.takeScreenshot().then(function (png) {
+	//browser.takeScreenshot().then(function (png) {
 		browser.getCapabilities().then(function (capabilities) {
 			var descriptions = util.gatherDescriptions(
 					spec.suite
@@ -185,14 +185,14 @@ function reportSpecResults(spec) {
 					throw new Error('Could not create directory ' + directory);
 				} else {
 					util.addMetaData(metaData, metaDataPath, descriptions, self.finalOptions);
-					if(!(self.takeScreenShotsOnlyForFailedSpecs && results.passed())) {
-						util.storeScreenShot(png, screenShotPath);
-					}	
+					//if(!(self.takeScreenShotsOnlyForFailedSpecs && results.passed())) {
+					//	util.storeScreenShot(png, screenShotPath);
+					//}
 					util.storeMetaData(metaData, metaDataPath);
 				}
 			});
 		});
-	});
+	//});
 
 };
 
