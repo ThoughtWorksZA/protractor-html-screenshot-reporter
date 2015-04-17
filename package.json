@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ThoughtWorksZA/protractor-html-screenshot-reporter.git"
+    "url": "git://github.com/ThoughtWorksZA/protractor-html-screenshot-reporter.git"
   },
   "dependencies": {
     "mkdirp": "~0.3.5",
